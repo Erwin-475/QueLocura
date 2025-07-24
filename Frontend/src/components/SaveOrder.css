@@ -1,0 +1,28 @@
+.save-order-modal {
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0,0,0,0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2000;
+}
+.save-order-modal form, .save-order-modal > div {
+  background: #222;
+  padding: 2rem;
+  border-radius: 8px;
+  color: #fff;
+  min-width: 300px;
+  max-width: 90vw;
+}
+.save-order-modal input {
+  display: block;
+  width: 100%;
+  margin-bottom: 1rem;
+  padding: 0.5rem;
+  border-radius: 4px;
+  border: none;
+}
+.save-order-modal button {
+  margin-top: 1rem;
+}

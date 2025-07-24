@@ -1,0 +1,51 @@
+.compact-container {
+  width: 1000px;
+  height: 349.55px;
+  padding: 0.5rem;
+  box-sizing: border-box;
+  background-color: #222;
+  border: 1px solid #ddd;
+  overflow: hidden;
+  font-size: 12px;
+  border-radius: 8px;
+}
+
+.compact-title {
+  font-size: 14px;
+  text-align: center;
+  margin-bottom: 0.5rem;
+  color: #fff;
+}
+
+.table-wrapper {
+  overflow-y: auto;
+  height: calc(100% - 30px);
+}
+
+.compact-table {
+  width: 100%;
+  border-collapse: collapse;
+
+}
+
+.compact-table th,
+.compact-table td {
+  padding: 4px 6px;
+  border: 1px solid #ccc;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.compact-table thead {
+  background-color: #09f;
+  color: white;
+  position: sticky;
+  top: 0;
+}
+
+.check-button {
+  padding: 2px;
+  height: 32px;
+  width: 32px;
+  background-color: #09f;
+}

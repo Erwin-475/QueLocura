@@ -1,0 +1,36 @@
+.filters {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2rem;
+  padding: 1rem 0;
+  background: rgba(20, 20, 20, 0.7);
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+}
+
+.filters label {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #fff;
+  margin-right: 1rem;
+  letter-spacing: 0.5px;
+}
+
+.filters select {
+  padding: 0.5rem 1.2rem;
+  border-radius: 6px;
+  border: 1px solid #09f;
+  background: #222;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 500;
+  outline: none;
+  transition: border-color 0.2s, box-shadow 0.2s;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.15);
+}
+
+.filters select:focus {
+  border-color: #fff;
+  box-shadow: 0 0 0 2px #09f4;
+}
