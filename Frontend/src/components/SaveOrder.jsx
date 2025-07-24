@@ -22,7 +22,7 @@ export function SaveOrder({ onClose }) {
         e.preventDefault()
         setLoading(true)
         try {
-            const resUser = await fetch('http://127.0.0.1:5000/add/user', {
+            const resUser = await fetch(`${import.meta.env.VITE_API_URL}/add/user`, {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify({ name: form.name, address: form.address, phone: form.phone })
@@ -30,7 +30,7 @@ export function SaveOrder({ onClose }) {
             const userData = await resUser.json()
             const iduser = userData.iduser
 
-            const resOrder = await fetch('http://127.0.0.1:5000/add/order', {
+            const resOrder = await fetch(`${import.meta.env.VITE_API_URL}/add/order`, {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify({ iduser, pay: form.pay, changes: form.changes - total })
@@ -43,7 +43,7 @@ export function SaveOrder({ onClose }) {
                 idproducts: item.id,
                 quantity: item.quantity
             }))
-            await fetch('http://127.0.0.1:5000/add/detail', {
+            await fetch(`${import.meta.env.VITE_API_URL}/add/detail`, {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify({ idorders, idproducts: detalles })

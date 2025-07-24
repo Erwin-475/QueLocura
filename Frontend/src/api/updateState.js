@@ -1,5 +1,5 @@
 export async function actualizarEstado(id) {
-    const response = await fetch(`http://127.0.0.1:5000/admin/update_state/${id}`, {
+    const response = await fetch(`${import.meta.env.VITE_API_URL}admin/update_state/${id}`, {
         method: 'PUT',
     });
     if (!response.ok) {

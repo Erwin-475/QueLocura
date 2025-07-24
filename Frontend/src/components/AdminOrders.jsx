@@ -4,14 +4,14 @@ import io from 'socket.io-client';
 import './AdminOrders.css'
 import { CheckIcon } from './Icons.jsx';
 
-const socket = io('http://127.0.0.1:5000');
+const socket = io(`${import.meta.env.VITE_API_URL}`);
 
 export function AdminOrders() {
   const [orders, setOrders] = useState([])
 
   useEffect(() => {
     const fetchOrders = () => {
-      fetch('http://127.0.0.1:5000/admin/pedidos_pendientes')
+      fetch(`${import.meta.env.VITE_API_URL}admin/pedidos_pendientes`)
         .then(res => res.json())
         .then(setOrders)
         .catch(console.error);
