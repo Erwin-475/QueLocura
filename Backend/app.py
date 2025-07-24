@@ -8,11 +8,11 @@ app = Flask(__name__)
 CORS(app)
 socketio = SocketIO(app, cors_allowed_origins="*")
 
-app.config['MYSQL_HOST'] = os.getenv("MYSQL_HOST", "localhost")
+app.config['MYSQL_HOST'] = os.getenv("MYSQL_HOST", "switchback.proxy.rlwy.net")
 app.config['MYSQL_USER'] = os.getenv("MYSQL_USER", "root")
-app.config['MYSQL_PASSWORD'] = os.getenv("MYSQL_PASSWORD", "")
+app.config['MYSQL_PASSWORD'] = os.getenv("MYSQL_PASSWORD", "anjXMzKAhqwHlxRVeTdeTcfJGbSyrfaY")
 app.config['MYSQL_DB'] = os.getenv("MYSQL_DB", "quelocura")
-app.config['MYSQL_PORT'] = 3306
+app.config['MYSQL_PORT'] = int(os.getenv("MYSQL_PORT", 3306))
 
 mysql = MySQL(app)
 
