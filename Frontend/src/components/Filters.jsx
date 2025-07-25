@@ -22,7 +22,7 @@ export function Filters () {
           <option value='all'>Todas</option>
           <option value='Perros'>Perros</option>
           <option value='Hamburguezas'>Hamburguesas</option>
-          <option value='Sándwiches'>Sandwiches</option>
+          <option value='Sandwiches'>Sándwiches</option>
           <option value='Salvajadas'>Salvajadas</option>
           <option value='Salchipapas'>Salchipapas</option>
           <option value='Asados'>Asados</option>
